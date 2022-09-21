@@ -20,4 +20,4 @@ ADD . .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-ENTRYPOINT [ "python","train.py" ]
+ENTRYPOINT [ "python","src/train.py" ]
