@@ -45,4 +45,5 @@ build: ## Build a docker image
 	docker build -t emlov2:session-02 .
 
 docker_run: ## Run the docker image 
-	docker run --volume /docker_logs:/opt/src emlov2:session-02
+	mkdir test_logs
+	docker run -t -v test_logs:/srv/app/logs emlov2:session-02

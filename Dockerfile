@@ -16,8 +16,10 @@ RUN pip install \
 
 
 
-ADD . .
+ADD . /srv/app
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r /srv/app/requirements.txt
 
-ENTRYPOINT [ "python","src/train.py" ]
+
+
+ENTRYPOINT [ "python","/srv/app/src/train.py" ]
