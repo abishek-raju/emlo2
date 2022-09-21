@@ -40,3 +40,9 @@ debug: ## Enter debugging mode with pdb
 	# - docs: https://docs.python.org/3/library/pdb.html
 	#
 	python -m pdb src/train.py debug=default
+
+build: ## Build a docker image
+	docker build -t emlov2:session-02 .
+
+docker_run: ## Run the docker image
+	docker run emlov2:session-02
