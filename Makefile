@@ -46,4 +46,4 @@ build: ## Build a docker image
 
 docker_run: ## Run the docker image 
 	mkdir test_logs
-	docker run -t -v test_logs:/srv/app/logs emlov2:session-02
+	docker run -t -v ./test_logs:/srv/app/logs emlov2:session-02
