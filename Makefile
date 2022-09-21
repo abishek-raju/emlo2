@@ -44,5 +44,5 @@ debug: ## Enter debugging mode with pdb
 build: ## Build a docker image
 	docker build -t emlov2:session-02 .
 
-docker_run: ## Run the docker image
-	docker run emlov2:session-02
+docker_run: ## Run the docker image 
+	docker run --volume /docker_logs:/opt/src emlov2:session-02
