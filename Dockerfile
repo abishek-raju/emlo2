@@ -22,4 +22,7 @@ RUN pip install --no-cache-dir -r /srv/app/requirements.txt
 
 
 
-ENTRYPOINT [ "python","/srv/app/src/train.py" ]
+# ENTRYPOINT [ "python","/srv/app/src/train.py" ]
+WORKDIR /srv/app/
+
+ENTRYPOINT []
