@@ -49,5 +49,5 @@ docker_run: ## Run the docker image
 	cd test_logs
 	# docker run -t -v ./test_logs:/srv/app/logs emlov2:session-02
 	# docker run -t -v $(pwd):/srv/app/logs emlov2:session-02
-	docker run -t -v 'pwd':/srv/app/logs emlov2:sessn-02 python src/train.py
+	docker run -t -v 'pwd':/srv/app/logs emlov2:session-02 python src/train.py
 
