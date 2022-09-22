@@ -22,5 +22,4 @@ RUN pip install --no-cache-dir -r /srv/app/requirements.txt
 
 
 
-# ENTRYPOINT [ "python","/srv/app/src/train.py" ]
-RUN echo "hi this is temp" > /srv/app/logs/hi
+ENTRYPOINT [ "python","/srv/app/src/train.py" ]
